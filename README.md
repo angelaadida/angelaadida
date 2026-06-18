@@ -1,4 +1,4 @@
-## Hi, I'm Angela Nguyen Hao 👋
+## Hi, I'm Angela 👋
 
 **Data Scientist | AI • Machine Learning • Business Intelligence**
 
