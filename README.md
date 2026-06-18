@@ -75,5 +75,5 @@ Results-driven Data Scientist with 4+ years of experience across banking, techno
 
 ### 📫 Connect with Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Angela_Nguyen_Hao-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/angela-n-25945b338)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Angela-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/angela-n-25945b338)
 [![Email](https://img.shields.io/badge/Email-angelaadida@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:angelaadida@gmail.com)
