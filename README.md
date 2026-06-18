@@ -1,4 +1,4 @@
-## Hi, I'm Angela 👋
+## Hi, I'm Angela Nguyen Hao 👋
 
 **Data Scientist | AI • Machine Learning • Business Intelligence**
 
@@ -11,7 +11,6 @@
 Results-driven Data Scientist with 4+ years of experience across banking, technology, and education sectors in Southeast Asia. I specialize in building AI-powered solutions — from predictive models and RAG pipelines to end-to-end BI dashboards that drive strategic decision-making.
 
 - 🔭 Currently working at **Accenture Technology Solutions**
-- 
 - 🤖 Passionate about **Generative AI**, **LLM applications**, and **Agentic AI systems**
 - 📊 Love turning raw data into actionable insights through **Power BI** and **Tableau**
 - 🎓 Master of Data Science — Birchwood University (U.S.-Accredited)
