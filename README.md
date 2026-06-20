@@ -83,7 +83,7 @@ Results-driven Data Scientist with 4+ years of experience across banking, techno
 | Project | Type | Description | Tech | Result |
 |---------|------|-------------|------|--------|
 | [bank-loan-amount-prediction](https://github.com/angelaadida/bank-loan-amount-prediction) | Supervised | Bank loan prediction with feature engineering & Tableau | RandomForest, Pandas | R²=0.9951 |
-| [financial-analytics-dashboard](https://github.com/angelaadida/financial-analytics-dashboard) | BI Dashboard | 15-page Power BI financial dashboard | Power BI, DAX | — |
+| [financial-analytics-dashboard](https://github.com/angelaadida/financial-analytics-dashboard) | BI Dashboard | 15-page Power BI financial dashboard | Power BI, DAX | P&L, CFO, DuPont |
 | [google-gemini-chatbot](https://github.com/angelaadida/google-gemini-chatbot) | GenAI | RAG chatbot with voice interaction | Gemini, LangChain | GenAI |
 | [breast-cancer-gradient-xgboost](https://github.com/angelaadida/breast-cancer-gradient-xgboost) | Supervised | Cancer classification | GradientBoosting, XGBoost | 97% |
 | [handwritten-digits-classification](https://github.com/angelaadida/handwritten-digits-classification) | Supervised | Digit recognition — SVM vs RF vs DT | SVM, RandomForest | 97.5% |
