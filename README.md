@@ -36,13 +36,21 @@ Most portfolios show one model solving one problem. This series does what a real
 
 | Project | Type | Business Question | Tech | Result |
 |---|---|---|---|---|
-| [bank-loan-amount-prediction](https://github.com/angelaadida/bank-loan-amount-prediction) | Regression | How much should this customer be approved to borrow? | RandomForest, StandardScaler, RandomizedSearchCV, Tableau | R² 0.20, MAE $4,382 |
 | [bank_loan-default-prediction](https://github.com/angelaadida/bank_loan-default-prediction) | Binary Classification | Will this customer default on the loan? | Logistic Regression, RandomForest, XGBoost | AUC-ROC 0.94, 90% default recall |
+| [bank_customer-risk-segmentation](https://github.com/angelaadida/bank_customer-risk-segmentation) | Unsupervised Clustering | What natural customer groups exist, with no target at all? | KMeans, DBSCAN, PCA | 2 clean segments, silhouette 0.38 |
+| [bank-loan-amount-prediction](https://github.com/angelaadida/bank-loan-amount-prediction) | Regression | How much should this customer be approved to borrow? | RandomForest, StandardScaler, RandomizedSearchCV, Tableau | R² 0.20, MAE $4,382 |
 | [bank_loan-intent-classification](https://github.com/angelaadida/bank_loan-intent-classification) | Multi-class Classification | Why is this customer borrowing? | Logistic Regression, RandomForest | F1-macro 0.20 — honest negative result |
 | [bank_interest-rate-prediction](https://github.com/angelaadida/bank_interest-rate-prediction) | Regression | What interest rate should be offered? | RandomForest, RandomizedSearchCV, Tableau | R² 0.09 — directional, not precise |
-| [bank_customer-risk-segmentation](https://github.com/angelaadida/bank_customer-risk-segmentation) | Unsupervised Clustering | What natural customer groups exist, with no target at all? | KMeans, DBSCAN, PCA | 2 clean segments, silhouette 0.38 |
 
 Same rows, same columns, five different meanings — and that's the point. `loan_amnt` is leakage when *predicting the loan amount itself*, but a legitimate input when *pricing the interest rate*. A 90% recall matters enormously when the question is default risk, and would be meaningless for a clustering problem that has no "correct" label to recall at all. Two of the five models above return weak R²/F1 scores — those are reported as-is, with the reasoning for *why* the data can't support a stronger answer, rather than tuned until the number looks better. Every notebook follows the same audited pipeline (leakage check → encode once → split → scale on train only → evaluate out-of-sample), because the discipline has to hold regardless of which of the five questions is being asked.
+
+### 🤖 AI Agents & Automation
+
+Most ML portfolios stop at "the model predicts X." This project asks the harder production question: once an LLM produces an answer, how do you know it's not making something up — and what stops it from acting on that mistake? Built as a governed pipeline (Claude API + MCP) rather than a one-off script, every output is verified against source data before anything reaches a human inbox.
+
+| Project | Type | Business Question | Tech | Result |
+|---|---|---|---|---|
+| [uob-kpi-business-analyst-agent](https://github.com/angelaadida/uob-kpi-business-analyst-agent) | AI Agent (LLM + MCP) | How did the bank perform this quarter, and what needs a human's attention before it goes external? | Claude API, MCP (Gmail/Drive/Asana), Python | 6/6 pipeline steps live-verified end to end; caught the model hallucinating an unsourced regulatory figure mid-build and closed the gap through system-prompt redesign — full case study documented in the repo |
 
 ---
 
