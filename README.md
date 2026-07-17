@@ -46,11 +46,13 @@ Same rows, same columns, five different meanings — and that's the point. `loan
 
 ### 🤖 AI Agents & Automation
 
-Most ML portfolios stop at "the model predicts X." This project asks the harder production question: once an LLM produces an answer, how do you know it's not making something up — and what stops it from acting on that mistake? Built as a governed pipeline (Claude API + MCP) rather than a one-off script, every output is verified against source data before anything reaches a human inbox.
+Most ML portfolios stop at "the model predicts X." These two projects ask the harder production questions: once an LLM produces an answer, how do you know it's not making something up — and what stops it from acting on that mistake? And once you have that answer, can you trust it alone, or does it need a second, independent check before a human ever sees it?
 
 | Project | Type | Business Question | Tech | Result |
 |---|---|---|---|---|
 | [uob-kpi-business-analyst-agent](https://github.com/angelaadida/uob-kpi-business-analyst-agent) | AI Agent (LLM + MCP) | How did the bank perform this quarter, and what needs a human's attention before it goes external? | Claude API, MCP (Gmail/Drive/Asana), Python | 6/6 pipeline steps live-verified end to end; caught the model hallucinating an unsourced regulatory figure mid-build and closed the gap through system-prompt redesign — full case study documented in the repo |
+
+| [loan-multi-agent-review](https://github.com/angelaadida/loan-multi-agent-review) | Multi-Agent System | **Most single-agent pipelines trust their own output.** This one doesn't — a second, independently-built agent re-scores every decision before a human ever sees it. | Claude API, XGBoost, MCP (Gmail/Drive/Asana), Python | 3 of 8 applications flagged via AI-vs-model disagreement, traced to a 0% vs 45% anomaly in the training data |
 
 ---
 
