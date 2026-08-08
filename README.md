@@ -16,22 +16,6 @@ This GitHub documents my project work — every repo includes full code, documen
 
 ---
 
-## 🎓 Certifications
-
-Full certification list with verified credential links is available in my resume — summary below:
-
-| Certification | Issuer | Year |
-|---|---|---|
-| Master of Data Science | Birchwood University (U.S.-Accredited) | 2025 |
-| AI Foundations, Applied AI Foundations, Agents and Workflows | OpenAI Academy | 2026 |
-| Finance Analytics & Business Intelligence | Microsoft Partner | 2026 |
-| Machine Learning Specialization | Stanford University & DeepLearning.AI | 2025 |
-| Large-Scale Database Systems | Johns Hopkins University | 2025 |
-| AWS Cloud Practitioner | Amazon Web Services | 2025 |
-| SQL for Data Analysis | Magic Code | 2021 |
-
----
-
 ## 🛠️ Tech Stack
 
 **Languages & Query:** Python, R, SQL, DAX, Power Query
